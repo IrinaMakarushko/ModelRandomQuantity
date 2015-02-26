@@ -20,8 +20,10 @@ public class MaklarenMarsalGenerator implements Generator {
         generatorY = g2;
         matrixV = new ArrayList<>(sizeOfMatrixV);
         resultList = new ArrayList<>();
-        StringBuilder str = new StringBuilder("MaklarenMarsalGenerator");
+        StringBuilder str = new StringBuilder("maklarenMarsalGenerator");
         str.append(generatorX.getModule());
+        str.append(" ");
+        str.append(generatorY.getModule());
         str.append(".txt");
         fileName = new String(str);
     }

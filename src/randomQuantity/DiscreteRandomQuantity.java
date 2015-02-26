@@ -18,6 +18,7 @@ public class DiscreteRandomQuantity {
         values = new ArrayList<>();
         StringBuilder str = new StringBuilder("DiscreteRandomQuantity");
         str.append(m.size());
+        str.append(continuousRQ.getClass());
         str.append(".txt");
         fileName = new String(str);
     }

@@ -17,8 +17,9 @@ public class ContinuousRandomQuantity {
     public ContinuousRandomQuantity(Generator g){
         generator = g;
         values = new ArrayList<>();
-        StringBuilder str = new StringBuilder("continuousRandomQuantity");
+        StringBuilder str = new StringBuilder("ContinuousRandomQuantity");
         str.append(generator.getModule());
+        str.append(generator.getClass());
         str.append(".txt");
         fileName = new String(str);
     }
